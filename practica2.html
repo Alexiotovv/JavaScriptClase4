@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Carrito</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-header" style="background-color: #46c8e1;">
+                        <h2>Pedido</h2>
+                    </div>
+                    <div class="card-body">
+                        <label for="">Nombre del Producto</label>
+                        <input type="text" class="form form-control" value="Laptop HP 15" class="form form-control" id="Producto">
+                        <label for="">Precio del Producto</label>
+                        <input type="number" value="20.00" class="form form-control" id="PrecioProducto">
+                        <label for="">Tamaño</label>
+                        <select id="Tamano" class="form-select">
+                            <option value="--">Seleccione Opción</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                        </select>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="">Unidades a Llevar</label>
+                                <input type="number" value="1" class="form form-control" id="Cantidad" disabled>
+                            </div>
+                            <div class="col-sm-6">
+                                <br>
+                                <button class="btn btn-info" id="btnMas">+</button>
+                                <button class="btn btn-info" id="btnMenos">-</button>
+                            </div>
+                        </div>
+                        
+                        <label for="">Igv</label>
+                        <input type="text" value="0.00%" class="form form-control" id="Igv" disabled>
+                        <label for="">Total a Pagar</label>
+                        <input type="text" value="0.00" class="form form-control" id="TotalPagar" disabled>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">                            
+                            <div class="col-md-6">
+                                <button class="btn btn-danger float-start">Agregar Más Productos</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary float-end" style="width: 50%;" id="btnPagar">Pagar</button>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h2 style="text-align: center;">Producto</h2>
+                    </div>
+                    <div class="card-body" style="text-align: center;">
+                        <img src="img/imagen_laptop.png" alt="" style="width: 70%;height: 70%;">
+                    </div>
+                    <!-- <div class="card-footer">
+                        <button class="btn btn-primary">Pagar</button>
+                    </div> -->
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="jspedidos/pedido.js"></script>
+
+</body>
+
+</html>
